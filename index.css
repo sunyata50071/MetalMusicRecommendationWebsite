@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    font-family: "IM Fell French Canon SC";
+    background-color: whitesmoke;
+}
+
+/*typography*/
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* layout */
+
+.header{
+    background-color: #ae2012;
+    display: flex;
+    text-align: centre;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.user-genre-options {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0px auto;
+}
+
+/* controls */
+
+.genre-radios{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 5px 10px;
+}
+
+.radio:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.radio:last-child{
+    border-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+label{
+    font-size: 15px;
+    padding: 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.highlight{
+    background-color: #e9ff70;
+    color: #283618;
+    font-weight: bold;
+    accent-color: #283618;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.generate-record-btn{
+    background-color: #606c38;
+    color: whitesmoke;
+    padding: 15px 15px;
+    font-size: 20px;
+    font-family: "IM Fell French Canon SC";
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* modal */
+
+.album-modal{
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 80px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 470px;
+    height: 470px;
+    background-color: opacity;
+}
+
+.album-modal-close-btn{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 18px;
+}
+
+.album-modal-close-btn:hover{
+    color: white;
+    background-color: #f6aa1c;
+    border: 2px solid #f6aa1c;
+}
